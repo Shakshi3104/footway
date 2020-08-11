@@ -13,6 +13,9 @@
 		CE2D71F024E22B6D0094A29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2D71EF24E22B6D0094A29F /* Assets.xcassets */; };
 		CE2D71F324E22B6D0094A29F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2D71F224E22B6D0094A29F /* Preview Assets.xcassets */; };
 		CE2D71F624E22B6D0094A29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2D71F424E22B6D0094A29F /* LaunchScreen.storyboard */; };
+		CE2D720424E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D720324E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift */; };
+		CE2D720624E23BC70094A29F /* SensorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D720524E23BC70094A29F /* SensorLogger.swift */; };
+		CEEF7EAA24E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CEEF7EA924E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CE2D71F224E22B6D0094A29F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE2D71F524E22B6D0094A29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2D71F724E22B6D0094A29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2D720324E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidewalkSurfaceTypeClassifier.swift; sourceTree = "<group>"; };
+		CE2D720524E23BC70094A29F /* SensorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorLogger.swift; sourceTree = "<group>"; };
+		CEEF7EA924E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceTypeModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		CE2D71E824E22B660094A29F /* SidewalkSurfaceTypeClassification */ = {
 			isa = PBXGroup;
 			children = (
+				CEEF7EA924E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel */,
 				CE2D71E924E22B660094A29F /* AppDelegate.swift */,
 				CE2D71EB24E22B660094A29F /* SceneDelegate.swift */,
 				CE2D71ED24E22B660094A29F /* ContentView.swift */,
@@ -63,6 +70,8 @@
 				CE2D71F424E22B6D0094A29F /* LaunchScreen.storyboard */,
 				CE2D71F724E22B6D0094A29F /* Info.plist */,
 				CE2D71F124E22B6D0094A29F /* Preview Content */,
+				CE2D720324E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift */,
+				CE2D720524E23BC70094A29F /* SensorLogger.swift */,
 			);
 			path = SidewalkSurfaceTypeClassification;
 			sourceTree = "<group>";
@@ -147,6 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2D71EA24E22B660094A29F /* AppDelegate.swift in Sources */,
+				CE2D720424E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift in Sources */,
+				CEEF7EAA24E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel in Sources */,
+				CE2D720624E23BC70094A29F /* SensorLogger.swift in Sources */,
 				CE2D71EC24E22B660094A29F /* SceneDelegate.swift in Sources */,
 				CE2D71EE24E22B660094A29F /* ContentView.swift in Sources */,
 			);
