@@ -35,6 +35,7 @@ class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
         
         self.prediction = output.classLabel
         print(output.classLabel)
+        print(output.dense_3)
         
         return output.classLabel
     }
