@@ -2,8 +2,8 @@
 //  SensorLogger.swift
 //  SidewalkSurfaceTypeClassification
 //
-//  Created by Satoshi on 2020/08/11.
-//  Copyright © 2020 Satoshi. All rights reserved.
+//  Created by MacBook Air Lab on 2020/08/11.
+//  Copyright © 2020 MacBook Air Lab. All rights reserved.
 //
 
 import Foundation
