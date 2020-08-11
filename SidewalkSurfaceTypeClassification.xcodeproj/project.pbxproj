@@ -29,6 +29,7 @@
 		CE2D71F724E22B6D0094A29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2D720324E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidewalkSurfaceTypeClassifier.swift; sourceTree = "<group>"; };
 		CE2D720524E23BC70094A29F /* SensorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorLogger.swift; sourceTree = "<group>"; };
+		CE869D0224E27B8100E97707 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEEF7EA924E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceTypeModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +47,7 @@
 		CE2D71DD24E22B660094A29F = {
 			isa = PBXGroup;
 			children = (
+				CE869D0224E27B8100E97707 /* README.md */,
 				CE2D71E824E22B660094A29F /* SidewalkSurfaceTypeClassification */,
 				CE2D71E724E22B660094A29F /* Products */,
 			);
