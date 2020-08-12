@@ -24,7 +24,7 @@ The model of sidewalk surface type classifier was trained via `tensorflow.keras`
     - mat
 
 ### Model Architecture
-This classifier is the model of VGG16 ([Very Deep Convolutional Networks for Large-Scale Image Recogniton](https://arxiv.org/abs/1409.1556) by K. Shimonyan et al.) adapted to sensor data.
+This classifier is based on the model of VGG16 ([Very Deep Convolutional Networks for Large-Scale Image Recogniton](https://arxiv.org/abs/1409.1556) by K. Shimonyan et al.) adapted to sensor data.
 
 Implementation of the model in `tf.keras` is [here](https://github.com/Shakshi3104/5-tornadoes).
 
