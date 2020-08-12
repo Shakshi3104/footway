@@ -10,7 +10,18 @@ import Foundation
 import CoreML
 
 class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
-    let model = SidewalkSurfaceTypeModel()
+//    let model = SidewalkSurfaceTypeModel()
+    
+    let model: SidewalkSurfaceTypeModel = {
+        do {
+            let config = MLModelConfiguration()
+            return try SidewalkSurfaceTypeModel(configuration: config)
+        } catch {
+            print(error)
+            fatalError("Couldn't create SidewalkSurfaceTypeModel")
+        }
+    }()
+    
     let x_length: Int = 256 * 3
     @Published var prediction: String = "None"
     
