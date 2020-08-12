@@ -25,6 +25,13 @@ class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
     let x_length: Int = 256 * 3
     @Published var prediction: String = "None"
     
+    @Published var asphaltSoftmax: Double = Double.nan
+    @Published var gravelSoftmax: Double = Double.nan
+    @Published var lawnSoftmax: Double = Double.nan
+    @Published var grassSoftmax: Double = Double.nan
+    @Published var sandSoftmax: Double = Double.nan
+    @Published var matSoftmax: Double = Double.nan
+    
     
     func predict(x: [Double]) -> String {
         // 長さがx_lengthではない場合は予測できない
@@ -44,7 +51,17 @@ class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
             fatalError("Unexpected runtime error.")
         }
         
+        // 予測ラベル
         self.prediction = output.classLabel
+        
+        // Softmaxの出力
+        self.asphaltSoftmax = output.dense_3["asphalt"]!
+        self.gravelSoftmax = output.dense_3["gravel"]!
+        self.lawnSoftmax = output.dense_3["lawn"]!
+        self.grassSoftmax = output.dense_3["grass"]!
+        self.sandSoftmax = output.dense_3["sand"]!
+        self.matSoftmax = output.dense_3["mat"]!
+        
         print(output.classLabel)
         print(output.dense_3)
         

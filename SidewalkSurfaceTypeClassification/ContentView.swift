@@ -73,6 +73,7 @@ struct ContentView: View {
             }
             .padding(.horizontal)
             
+            // 路面種別を表示する
             VStack {
                 if self.manager.classifier.prediction == "asphalt" {
                     Image(systemName: "tortoise").resizable().scaledToFit().frame(width: 70, height: 70)
@@ -103,6 +104,54 @@ struct ContentView: View {
                     Text("None")
                 }
             }.padding(.vertical)
+            
+            // Softmaxの値を表示する
+            VStack(alignment: .leading) {
+                Text("Softmax")
+                    .font(.headline)
+                
+                HStack {
+                    Text("Asphalt")
+                    Spacer()
+                    Text(String(format: "%.5f", self.manager.classifier.asphaltSoftmax))
+                }.padding(.horizontal)
+                .padding(.vertical, 1)
+                
+                HStack {
+                    Text("Gravel")
+                    Spacer()
+                    Text(String(format: "%.5f", self.manager.classifier.gravelSoftmax))
+                }.padding(.horizontal)
+                .padding(.vertical, 1)
+                
+                HStack {
+                    Text("Lawn")
+                    Spacer()
+                    Text(String(format: "%.5f", self.manager.classifier.lawnSoftmax))
+                }.padding(.horizontal)
+                .padding(.vertical, 1)
+                
+                HStack {
+                    Text("Grass")
+                    Spacer()
+                    Text(String(format: "%.5f", self.manager.classifier.grassSoftmax))
+                }.padding(.horizontal)
+                .padding(.vertical, 1)
+                
+                HStack {
+                    Text("Sand")
+                    Spacer()
+                    Text(String(format: "%.5f", self.manager.classifier.sandSoftmax))
+                }.padding(.horizontal)
+                
+                HStack {
+                    Text("Mat")
+                    Spacer()
+                    Text(String(format: "%.5f", self.manager.classifier.matSoftmax))
+                }.padding(.horizontal)
+                .padding(.vertical, 1)
+                
+            }.padding(25)
             
             // 加速度の値を表示する
             VStack(alignment: .leading) {
