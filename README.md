@@ -29,14 +29,16 @@ This classifier is the model of VGG16 ([Very Deep Convolutional Networks for Lar
 Implementation of the model in `tf.keras` is [here](https://github.com/Shakshi3104/5-tornadoes).
 
 #### Layer Distribution
-- ActivationReLU: 15
-- Convolution: 13
-- PoolingMax: 5
-- Permute: 3
-- InnerProduct: 3
-- Reshape: 1
-- Flatten: 1
-- Softmax: 1
+|Layer Type|Num|
+|:------------|:----:|
+| ActivationReLU | 15 |
+| Convolution | 13 |
+| PoolingMax | 5 |
+| Permute | 3 |
+| InnerProduct | 3 |
+| Reshape | 1 |
+| Flatten | 1 |
+| Softmax | 1 |
 
 ### Used Python Libraries
 - Training the model: `tensorflow 2.1.0`
