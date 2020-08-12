@@ -2,7 +2,9 @@
 
 This application can classify sidewalk surface type from acceleration data obtained by iPhone or iPod touch.
 
-When you launch the app, press the start button, put your iPhone in your bottoms' pocket, and walk, it wil estimate the sidewalk surface type you walk on.
+When you launch the app, press the start button, put your iPhone in your bottoms' pocket, and walk, it will estimate the sidewalk surface type you walk on.
+
+The model of sidewalk surface type classifier was trained via `tensorflow.keras`, and converted to Core ML model (`.mlmodel`) by using coremltools.
 
 ## Requirements
 - iOS 13.1+
@@ -20,4 +22,24 @@ When you launch the app, press the start button, put your iPhone in your bottoms
     - grass
     - sand
     - mat
+
+### Model Architecture
+This classifier is the model of VGG16 ([Very Deep Convolutional Networks for Large-Scale Image Recogniton](https://arxiv.org/abs/1409.1556) by K. Shimonyan et al.) adapted to sensor data.
+
+Implementation of the model in `tf.keras` is [here](https://github.com/Shakshi3104/5-tornadoes).
+
+#### Layer Distribution
+- ActivationReLU: 15
+- Convolution: 13
+- PoolingMax: 5
+- Permute: 3
+- InnerProduct: 3
+- Reshape: 1
+- Flatten: 1
+- Softmax: 1
+
+### Used Python Libraries
+- Training the model: `tensorflow 2.1.0`
+- Adding the Reshape layer for Core ML: `keras 2.2.4`
+- Converting `.h5` model to `.mlmodel` model: `coremltools 4.0b1`
 

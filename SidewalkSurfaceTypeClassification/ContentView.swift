@@ -22,7 +22,7 @@ struct ContentView: View {
                 Spacer()
                 // 保存ボタン
                 Button(action: {
-                    
+                    self.isSharePresented = true
                 }){
                     HStack {
                         Image(systemName: "square.and.arrow.up")
@@ -31,7 +31,7 @@ struct ContentView: View {
                 }
                 .sheet(isPresented: $isSharePresented, content: {
                     // ActivityViewControllerを表示
-                    ActivityViewController(activityItems: [], applicationActivities: nil)
+                    ActivityViewController(activityItems: self.manager.logger.getDataURL(), applicationActivities: nil)
                 })
                 
                 Spacer()
