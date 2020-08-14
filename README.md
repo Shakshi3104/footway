@@ -28,6 +28,8 @@ This classifier is based on the model of VGG16 ([Very Deep Convolutional Network
 
 Implementation of the model in `tf.keras` is [here](https://github.com/Shakshi3104/5-tornadoes).
 
+Code of converting `tf.keras` to `.mlmodel` is [here](https://github.com/Shakshi3104/5-tornadoes/blob/master/east/networks/coreml.py).
+
 #### Layer Distribution
 |Layer Type|Num|
 |:------------|:----:|
