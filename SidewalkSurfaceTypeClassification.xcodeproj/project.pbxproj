@@ -20,6 +20,7 @@
 		CE62238724E7C935008D80C5 /* Screenshot_share.png in Resources */ = {isa = PBXBuildFile; fileRef = CE62238524E7C935008D80C5 /* Screenshot_share.png */; };
 		CE869D0624E2824800E97707 /* model_meta_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE869D0424E2824800E97707 /* model_meta_2.png */; };
 		CE869D0724E2824800E97707 /* model_meta_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE869D0524E2824800E97707 /* model_meta_1.png */; };
+		CE95063024E7CB4800546B3E /* IMG_4214.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE95062F24E7CB4800546B3E /* IMG_4214.PNG */; };
 		CEEF7EAA24E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CEEF7EA924E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		CE869D0224E27B8100E97707 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CE869D0424E2824800E97707 /* model_meta_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model_meta_2.png; sourceTree = "<group>"; };
 		CE869D0524E2824800E97707 /* model_meta_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model_meta_1.png; sourceTree = "<group>"; };
+		CE95062F24E7CB4800546B3E /* IMG_4214.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4214.PNG; sourceTree = "<group>"; };
 		CEEF7EA924E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceTypeModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				CE62238224E7C6C7008D80C5 /* SSTC-demo.gif */,
 				CE62238524E7C935008D80C5 /* Screenshot_share.png */,
 				CE62238424E7C935008D80C5 /* Screenshot_light.png */,
+				CE95062F24E7CB4800546B3E /* IMG_4214.PNG */,
 			);
 			path = materials;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				CE2D71F624E22B6D0094A29F /* LaunchScreen.storyboard in Resources */,
 				CE2D71F324E22B6D0094A29F /* Preview Assets.xcassets in Resources */,
 				CE62238724E7C935008D80C5 /* Screenshot_share.png in Resources */,
+				CE95063024E7CB4800546B3E /* IMG_4214.PNG in Resources */,
 				CE2D71F024E22B6D0094A29F /* Assets.xcassets in Resources */,
 				CE869D0624E2824800E97707 /* model_meta_2.png in Resources */,
 				CE62238324E7C6C7008D80C5 /* SSTC-demo.gif in Resources */,

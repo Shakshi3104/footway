@@ -8,7 +8,7 @@ The model of sidewalk surface type classifier was trained via `tensorflow.keras`
 
 Demo GIF|Top|When you press the Save button
 :-:|:-:|:-:
-![demo](materials/SSTC-demo.gif)|![screen](materials/Screenshot_light.png)|![screen](materials/Screenshot_share.png)
+![demo](materials/SSTC-demo.gif)|![screen](materials/IMG_4214.PNG)|![screen](materials/Screenshot_share.png)
 
 
 
