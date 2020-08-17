@@ -47,7 +47,7 @@ class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
         }
 
         // 予測させる
-        guard let output = try? self.model.prediction(input: SidewalkSurfaceTypeModelInput(input_2: mlArray)) else {
+        guard let output = try? self.model.prediction(input: SidewalkSurfaceTypeModelInput(input: mlArray)) else {
             fatalError("Unexpected runtime error.")
         }
         
@@ -55,15 +55,15 @@ class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
         self.prediction = output.classLabel
         
         // Softmaxの出力
-        self.asphaltSoftmax = output.dense_3["asphalt"]!
-        self.gravelSoftmax = output.dense_3["gravel"]!
-        self.lawnSoftmax = output.dense_3["lawn"]!
-        self.grassSoftmax = output.dense_3["grass"]!
-        self.sandSoftmax = output.dense_3["sand"]!
-        self.matSoftmax = output.dense_3["mat"]!
+        self.asphaltSoftmax = output.softmax["asphalt"]!
+        self.gravelSoftmax = output.softmax["gravel"]!
+        self.lawnSoftmax = output.softmax["lawn"]!
+        self.grassSoftmax = output.softmax["grass"]!
+        self.sandSoftmax = output.softmax["sand"]!
+        self.matSoftmax = output.softmax["mat"]!
         
         print(output.classLabel)
-        print(output.dense_3)
+        print(output.softmax)
         
         return output.classLabel
     }

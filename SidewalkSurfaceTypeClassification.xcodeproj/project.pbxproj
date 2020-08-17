@@ -15,13 +15,13 @@
 		CE2D71F624E22B6D0094A29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2D71F424E22B6D0094A29F /* LaunchScreen.storyboard */; };
 		CE2D720424E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D720324E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift */; };
 		CE2D720624E23BC70094A29F /* SensorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D720524E23BC70094A29F /* SensorLogger.swift */; };
+		CE3D197024EA159000B1E892 /* SidewalkSurfaceTypeModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CE3D196F24EA159000B1E892 /* SidewalkSurfaceTypeModel.mlmodel */; };
 		CE62238324E7C6C7008D80C5 /* SSTC-demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE62238224E7C6C7008D80C5 /* SSTC-demo.gif */; };
 		CE62238624E7C935008D80C5 /* Screenshot_light.png in Resources */ = {isa = PBXBuildFile; fileRef = CE62238424E7C935008D80C5 /* Screenshot_light.png */; };
 		CE62238724E7C935008D80C5 /* Screenshot_share.png in Resources */ = {isa = PBXBuildFile; fileRef = CE62238524E7C935008D80C5 /* Screenshot_share.png */; };
 		CE869D0624E2824800E97707 /* model_meta_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE869D0424E2824800E97707 /* model_meta_2.png */; };
 		CE869D0724E2824800E97707 /* model_meta_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE869D0524E2824800E97707 /* model_meta_1.png */; };
 		CE95063024E7CB4800546B3E /* IMG_4214.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE95062F24E7CB4800546B3E /* IMG_4214.PNG */; };
-		CEEF7EAA24E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CEEF7EA924E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +35,7 @@
 		CE2D71F724E22B6D0094A29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2D720324E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidewalkSurfaceTypeClassifier.swift; sourceTree = "<group>"; };
 		CE2D720524E23BC70094A29F /* SensorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorLogger.swift; sourceTree = "<group>"; };
+		CE3D196F24EA159000B1E892 /* SidewalkSurfaceTypeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceTypeModel.mlmodel; sourceTree = "<group>"; };
 		CE62238224E7C6C7008D80C5 /* SSTC-demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "SSTC-demo.gif"; sourceTree = "<group>"; };
 		CE62238424E7C935008D80C5 /* Screenshot_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot_light.png; sourceTree = "<group>"; };
 		CE62238524E7C935008D80C5 /* Screenshot_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot_share.png; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		CE869D0424E2824800E97707 /* model_meta_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model_meta_2.png; sourceTree = "<group>"; };
 		CE869D0524E2824800E97707 /* model_meta_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model_meta_1.png; sourceTree = "<group>"; };
 		CE95062F24E7CB4800546B3E /* IMG_4214.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4214.PNG; sourceTree = "<group>"; };
-		CEEF7EA924E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceTypeModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 		CE2D71E824E22B660094A29F /* SidewalkSurfaceTypeClassification */ = {
 			isa = PBXGroup;
 			children = (
-				CEEF7EA924E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel */,
+				CE3D196F24EA159000B1E892 /* SidewalkSurfaceTypeModel.mlmodel */,
 				CE2D71E924E22B660094A29F /* AppDelegate.swift */,
 				CE2D71EB24E22B660094A29F /* SceneDelegate.swift */,
 				CE2D71ED24E22B660094A29F /* ContentView.swift */,
@@ -191,7 +191,7 @@
 			files = (
 				CE2D71EA24E22B660094A29F /* AppDelegate.swift in Sources */,
 				CE2D720424E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift in Sources */,
-				CEEF7EAA24E25C65004437FC /* SidewalkSurfaceTypeModel.mlmodel in Sources */,
+				CE3D197024EA159000B1E892 /* SidewalkSurfaceTypeModel.mlmodel in Sources */,
 				CE2D720624E23BC70094A29F /* SensorLogger.swift in Sources */,
 				CE2D71EC24E22B660094A29F /* SceneDelegate.swift in Sources */,
 				CE2D71EE24E22B660094A29F /* ContentView.swift in Sources */,
