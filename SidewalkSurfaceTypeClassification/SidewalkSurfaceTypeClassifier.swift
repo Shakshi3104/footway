@@ -15,6 +15,7 @@ class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
     let model: SidewalkSurfaceTypeModel = {
         do {
             let config = MLModelConfiguration()
+            config.computeUnits = .all
             return try SidewalkSurfaceTypeModel(configuration: config)
         } catch {
             print(error)
