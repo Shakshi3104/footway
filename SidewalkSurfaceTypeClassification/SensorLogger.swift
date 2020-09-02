@@ -85,6 +85,7 @@ class AccelerometerManager: NSObject, ObservableObject {
         }
         
         self.data = [Double]()
+        self.logger.resetTimestamps()
     }
     
 }
@@ -106,6 +107,10 @@ class AccelerometerDataLogger {
     
     func logTimestamp() {
         self.timestamps.append(self.getTimestamp())
+    }
+    
+    func resetTimestamps() {
+        self.timestamps = [String]()
     }
     
     private func logOneLineData(time: String, x: Double, y: Double, z: Double, estimated: String) {
