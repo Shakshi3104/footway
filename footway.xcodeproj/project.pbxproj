@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE2D3FF624FF5F34009BF3B8 /* SidewalkSurfaceTypeModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CE2D3FF524FF5F34009BF3B8 /* SidewalkSurfaceTypeModel.mlmodel */; };
 		CE2D71EA24E22B660094A29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D71E924E22B660094A29F /* AppDelegate.swift */; };
 		CE2D71EC24E22B660094A29F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D71EB24E22B660094A29F /* SceneDelegate.swift */; };
 		CE2D71EE24E22B660094A29F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D71ED24E22B660094A29F /* ContentView.swift */; };
@@ -22,10 +21,10 @@
 		CE869D0624E2824800E97707 /* model_meta_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE869D0424E2824800E97707 /* model_meta_2.png */; };
 		CE869D0724E2824800E97707 /* model_meta_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE869D0524E2824800E97707 /* model_meta_1.png */; };
 		CE95063024E7CB4800546B3E /* IMG_4214.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE95062F24E7CB4800546B3E /* IMG_4214.PNG */; };
+		CEFE68E425F211D6000C7E24 /* SidewalkSurfaceClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CEFE68E325F211D6000C7E24 /* SidewalkSurfaceClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE2D3FF524FF5F34009BF3B8 /* SidewalkSurfaceTypeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceTypeModel.mlmodel; sourceTree = "<group>"; };
 		CE2D71E624E22B660094A29F /* footway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = footway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2D71E924E22B660094A29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2D71EB24E22B660094A29F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		CE869D0424E2824800E97707 /* model_meta_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model_meta_2.png; sourceTree = "<group>"; };
 		CE869D0524E2824800E97707 /* model_meta_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = model_meta_1.png; sourceTree = "<group>"; };
 		CE95062F24E7CB4800546B3E /* IMG_4214.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4214.PNG; sourceTree = "<group>"; };
+		CEFE68E325F211D6000C7E24 /* SidewalkSurfaceClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 		CE2D71E824E22B660094A29F /* SidewalkSurfaceTypeClassification */ = {
 			isa = PBXGroup;
 			children = (
-				CE2D3FF524FF5F34009BF3B8 /* SidewalkSurfaceTypeModel.mlmodel */,
+				CEFE68E325F211D6000C7E24 /* SidewalkSurfaceClassifier.mlmodel */,
 				CE2D71E924E22B660094A29F /* AppDelegate.swift */,
 				CE2D71EB24E22B660094A29F /* SceneDelegate.swift */,
 				CE2D71ED24E22B660094A29F /* ContentView.swift */,
@@ -139,7 +139,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Satoshi;
 				TargetAttributes = {
 					CE2D71E524E22B660094A29F = {
@@ -191,10 +191,10 @@
 			files = (
 				CE2D71EA24E22B660094A29F /* AppDelegate.swift in Sources */,
 				CE2D720424E237C40094A29F /* SidewalkSurfaceTypeClassifier.swift in Sources */,
-				CE2D3FF624FF5F34009BF3B8 /* SidewalkSurfaceTypeModel.mlmodel in Sources */,
 				CE2D720624E23BC70094A29F /* SensorLogger.swift in Sources */,
 				CE2D71EC24E22B660094A29F /* SceneDelegate.swift in Sources */,
 				CE2D71EE24E22B660094A29F /* ContentView.swift in Sources */,
+				CEFE68E425F211D6000C7E24 /* SidewalkSurfaceClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +238,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -298,6 +299,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

@@ -9,17 +9,26 @@
 import Foundation
 import CoreML
 
+extension MLMultiArray {
+    static func fromDouble(_ input: [Double]) throws -> MLMultiArray {
+        let mlArray = try! MLMultiArray(shape: [1, input.count as NSNumber], dataType: .double)
+        let ptr = mlArray.dataPointer.bindMemory(to: Double.self, capacity: input.count)
+        let ptrBuf = UnsafeMutableBufferPointer.init(start: ptr, count: input.count)
+        _ = ptrBuf.initialize(from: input)
+        return mlArray
+    }
+}
+
 class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
-//    let model = SidewalkSurfaceTypeModel()
     
-    let model: SidewalkSurfaceTypeModel = {
+    let model: SidewalkSurfaceClassifier = {
         do {
             let config = MLModelConfiguration()
             config.computeUnits = .all
-            return try SidewalkSurfaceTypeModel(configuration: config)
+            return try SidewalkSurfaceClassifier(configuration: config)
         } catch {
             print(error)
-            fatalError("Couldn't create SidewalkSurfaceTypeModel")
+            fatalError("Couldn't create SidewalkSurfaceClassifier")
         }
     }()
     
@@ -41,14 +50,10 @@ class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
         }
         
         // MLMultiArrayに変換する
-        let mlArray = try! MLMultiArray(shape: [self.x_length as NSNumber], dataType: MLMultiArrayDataType.double)
-        
-        for (index, data) in x.enumerated() {
-            mlArray[index] = data as NSNumber
-        }
+        let mlArray = try! MLMultiArray.fromDouble(x)
 
         // 予測させる
-        guard let output = try? self.model.prediction(input: SidewalkSurfaceTypeModelInput(input: mlArray)) else {
+        guard let output = try? self.model.prediction(input: SidewalkSurfaceClassifierInput(input: mlArray)) else {
             fatalError("Unexpected runtime error.")
         }
         
@@ -56,16 +61,13 @@ class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
         self.prediction = output.classLabel
         
         // Softmaxの出力
-        self.asphaltSoftmax = output.softmax["asphalt"]!
-        self.gravelSoftmax = output.softmax["gravel"]!
-        self.lawnSoftmax = output.softmax["lawn"]!
-        self.grassSoftmax = output.softmax["grass"]!
-        self.sandSoftmax = output.softmax["sand"]!
-        self.matSoftmax = output.softmax["mat"]!
-        
-        print(output.classLabel)
-        print(output.softmax)
-        
+        self.asphaltSoftmax = output.Identity["asphalt"]!
+        self.gravelSoftmax = output.Identity["gravel"]!
+        self.lawnSoftmax = output.Identity["lawn"]!
+        self.grassSoftmax = output.Identity["grass"]!
+        self.sandSoftmax = output.Identity["sand"]!
+        self.matSoftmax = output.Identity["mat"]!
+                
         return output.classLabel
     }
 }
