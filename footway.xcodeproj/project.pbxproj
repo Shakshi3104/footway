@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		CE2D3FF524FF5F34009BF3B8 /* SidewalkSurfaceTypeModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceTypeModel.mlmodel; sourceTree = "<group>"; };
-		CE2D71E624E22B660094A29F /* SidewalkSurfaceTypeClassification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidewalkSurfaceTypeClassification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2D71E624E22B660094A29F /* footway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = footway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2D71E924E22B660094A29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2D71EB24E22B660094A29F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE2D71ED24E22B660094A29F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		CE2D71E724E22B660094A29F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE2D71E624E22B660094A29F /* SidewalkSurfaceTypeClassification.app */,
+				CE2D71E624E22B660094A29F /* footway.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE2D71E524E22B660094A29F /* SidewalkSurfaceTypeClassification */ = {
+		CE2D71E524E22B660094A29F /* footway */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE2D71FA24E22B6D0094A29F /* Build configuration list for PBXNativeTarget "SidewalkSurfaceTypeClassification" */;
+			buildConfigurationList = CE2D71FA24E22B6D0094A29F /* Build configuration list for PBXNativeTarget "footway" */;
 			buildPhases = (
 				CE2D71E224E22B660094A29F /* Sources */,
 				CE2D71E324E22B660094A29F /* Frameworks */,
@@ -127,9 +127,9 @@
 			);
 			dependencies = (
 			);
-			name = SidewalkSurfaceTypeClassification;
+			name = footway;
 			productName = SidewalkSurfaceTypeClassification;
-			productReference = CE2D71E624E22B660094A29F /* SidewalkSurfaceTypeClassification.app */;
+			productReference = CE2D71E624E22B660094A29F /* footway.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +147,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE2D71E124E22B660094A29F /* Build configuration list for PBXProject "SidewalkSurfaceTypeClassification" */;
+			buildConfigurationList = CE2D71E124E22B660094A29F /* Build configuration list for PBXProject "footway" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE2D71E524E22B660094A29F /* SidewalkSurfaceTypeClassification */,
+				CE2D71E524E22B660094A29F /* footway */,
 			);
 		};
 /* End PBXProject section */
@@ -340,10 +340,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Xer.SidewalkSurfaceTypeClassification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.footway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -361,17 +361,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Xer.SidewalkSurfaceTypeClassification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.footway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE2D71E124E22B660094A29F /* Build configuration list for PBXProject "SidewalkSurfaceTypeClassification" */ = {
+		CE2D71E124E22B660094A29F /* Build configuration list for PBXProject "footway" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE2D71F824E22B6D0094A29F /* Debug */,
@@ -380,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE2D71FA24E22B6D0094A29F /* Build configuration list for PBXNativeTarget "SidewalkSurfaceTypeClassification" */ = {
+		CE2D71FA24E22B6D0094A29F /* Build configuration list for PBXNativeTarget "footway" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE2D71FB24E22B6D0094A29F /* Debug */,
