@@ -1,4 +1,4 @@
-#  SidewalkSurfaceTypeClassification
+#  Footway
 
 This application can classify sidewalk surface type from acceleration data obtained by iPhone or iPod touch.
 
@@ -6,8 +6,9 @@ When you launch the app, press the start button, put your iPhone in your bottoms
 
 The model of sidewalk surface type classifier was trained via `tensorflow.keras`, and converted to Core ML model (`.mlmodel`) by using `coremltools`.
 
-|![demo](materials/SSTC-demo.gif)|
-|:-:|
+<p align="center">
+  <img src="materials/SSTC-demo.gif" height=512 />
+</p>
 
 ## Requirements
 - iOS 13.1+
