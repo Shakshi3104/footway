@@ -9,6 +9,16 @@
 import Foundation
 import CoreML
 
+extension MLMultiArray {
+    static func fromDouble(_ input: [Double]) throws -> MLMultiArray {
+        let mlArray = try! MLMultiArray(shape: [1, input.count as NSNumber], dataType: .double)
+        let ptr = mlArray.dataPointer.bindMemory(to: Double.self, capacity: input.count)
+        let ptrBuf = UnsafeMutableBufferPointer.init(start: ptr, count: input.count)
+        _ = ptrBuf.initialize(from: input)
+        return mlArray
+    }
+}
+
 class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
     
     let model: SidewalkSurfaceClassifier = {
@@ -40,7 +50,7 @@ class SidewalkSurfaceTypeClassifier: NSObject, ObservableObject {
         }
         
         // MLMultiArrayに変換する
-        let mlArray = try! MLMultiArray(x)
+        let mlArray = try! MLMultiArray.fromDouble(x)
 
         // 予測させる
         guard let output = try? self.model.prediction(input: SidewalkSurfaceClassifierInput(input: mlArray)) else {
