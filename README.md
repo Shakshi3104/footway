@@ -7,7 +7,7 @@ When you launch the app, press the start button, put your iPhone in your bottoms
 The model of sidewalk surface type classifier was trained via `tensorflow.keras`, and converted to Core ML model (`.mlmodel`) by using `coremltools`.
 
 <p align="center">
-  <img src="materials/SSTC-demo.gif" height=512 />
+  <img src="materials/SSTC-demo.gif" width=256 />
 </p>
 
 ## Requirements
